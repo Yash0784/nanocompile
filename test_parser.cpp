@@ -5,8 +5,8 @@
 
 int main(int argc, char* argv[]) {
     if(argc < 2){
-        std::cout << "Use this executable as ./exe_name model.onnx\n";
-        return 0;
+        std::cout << "Use this executable as ./exe_name <path_to_model>\n";
+        return 1;
     }
     // 1. Verify your Protobuf runtime matches your generated headers
     GOOGLE_PROTOBUF_VERIFY_VERSION;
